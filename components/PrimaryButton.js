@@ -13,7 +13,7 @@ export default function PrimaryButton(props) {
             ? [style.pressed, style.buttonInnerContainer]
             : style.buttonInnerContainer
         }
-        onPress={pressHandler}
+        onPress={props.onPress}
         android_ripple={{ color: "#640233" }}
       >
         <Text style={style.buttonText}>{props.children}</Text>
